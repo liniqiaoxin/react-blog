@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  height: 2.8rem;
+  padding: 0.4rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: center;
+  /* width: 1200px; */
+  /* background-color: rgb(87, 36, 117); */
+}
+
+.header-logo {
+  color: #1e90ff;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.header-txt {
+  font-size: 0.6rem;
+  color: #999;
+  display: inline-block;
+  padding-left: 0.3rem;
+}
+
+.menu-div {
+  float: right;
+  line-height: 30px;
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu{
+  margin-left: 20px;
+  margin-right: 0;
+}
