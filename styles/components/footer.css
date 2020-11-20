@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #999;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.footer span {
+    text-align: center;
+    font-size: 15px;
+}

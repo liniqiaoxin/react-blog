@@ -4,11 +4,11 @@
  * @Author: linqiaoxin
  * @Date: 2020-11-19 14:00:11
  * @LastEditors: linqiaoxin
- * @LastEditTime: 2020-11-19 17:17:06
+ * @LastEditTime: 2020-11-20 16:09:34
  */
 import React from 'react';
 import { Row, Col, Menu } from 'antd';
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
+import { SmileTwoTone, HeartTwoTone, CheckCircleTwoTone  } from '@ant-design/icons';
 import '../styles/components/header.css'
 
 const { SubMenu } = Menu;
@@ -27,14 +27,14 @@ class Headers extends React.Component {
                     </Col>
                     <Col xs={0} sm={0} md={14} lg={8} xl={6}>
                         <Menu className='menu-div' mode="horizontal">
-                            <Menu.Item key="mail" icon={<MailOutlined />}>
+                            <Menu.Item key="mail" icon={<SmileTwoTone  />}>
                                 首页
                               </Menu.Item>
-                            <Menu.Item key="app"  icon={<AppstoreOutlined />}>
+                            <Menu.Item key="app"  icon={<HeartTwoTone twoToneColor="#eb2f96" />}>
                                 视频
                                </Menu.Item>
                         
-                          <Menu.Item key="alipay"  icon={<AppstoreOutlined />}>   
+                          <Menu.Item key="alipay"  icon={<CheckCircleTwoTone  twoToneColor="#52c41a"/>}>   
                                 分类
                             </Menu.Item>
                         </Menu>

@@ -1,0 +1,6 @@
+.icon {
+    font-size: 26px;
+    color: #999;
+    display: flex;
+    justify-content:  space-around;
+}
