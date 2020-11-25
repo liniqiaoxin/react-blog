@@ -4,17 +4,16 @@
  * @Author: linqiaoxin
  * @Date: 2020-11-19 14:00:11
  * @LastEditors: linqiaoxin
- * @LastEditTime: 2020-11-20 16:09:34
+ * @LastEditTime: 2020-11-23 09:52:18
  */
 import React from 'react';
 import { Row, Col, Menu } from 'antd';
 import { SmileTwoTone, HeartTwoTone, CheckCircleTwoTone  } from '@ant-design/icons';
 import '../styles/components/header.css'
 
-const { SubMenu } = Menu;
 
 
-class Headers extends React.Component {
+class Header extends React.Component {
 
     render() {
 
@@ -46,4 +45,4 @@ class Headers extends React.Component {
 
 };
 
-export default Headers;
+export default Header;
