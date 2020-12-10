@@ -4,7 +4,7 @@
  * @Author: linqiaoxin
  * @Date: 2020-11-30 10:51:43
  * @LastEditors: linqiaoxin
- * @LastEditTime: 2020-11-30 10:52:59
+ * @LastEditTime: 2020-12-07 10:51:12
  */
 'use strict';
 
@@ -15,4 +15,6 @@
 module.exports = app => {
   const { router, controller } = app;
   router.get('/default/index', controller.default.home.index);
+  router.get('/default/getArticleList', controller.default.home.getArticleList);
+  router.get('/default/getArticleById/:id', controller.default.home.getArticleById);
 };

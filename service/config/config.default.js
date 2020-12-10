@@ -4,7 +4,7 @@
  * @Author: linqiaoxin
  * @Date: 2020-11-30 09:50:27
  * @LastEditors: linqiaoxin
- * @LastEditTime: 2020-11-30 11:46:17
+ * @LastEditTime: 2020-12-04 16:56:05
  */
 /* eslint valid-jsdoc: "off" */
 
@@ -44,6 +44,19 @@ module.exports = appInfo => {
     app: true,
     // load into agent, default is close
     agent: false,
+  };
+
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+    domainWhiteList: [ '*' ],
+  };
+
+  config.cors = {
+    origin: 'http://localhost:3000', // 只允许这个域进行访问接口
+    credentials: true, // 开启认证
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
   };
 
   // add your user config here
